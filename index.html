@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/213cd2b7f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="navigation">
+      <nav>
+        <figure>
+          <img
+            src="https://previews.123rf.com/images/imogi/imogi1805/imogi180500166/102169832-vintage-film-reel-concept.jpg"
+            class="nav__logo"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor">Home</a>
+          </li>
+          <li class="nav__link">
+            <a href="" class="nav__link--anchor"
+              ><span class="black">About</span></a
+            >
+          </li>
+          <li class="nav__link">
+            <a class="btn__contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="landing-page">
+      <div class="container__landing-page">
+        <div class="landing-page__h1">
+          <h1>Movie Database</h1>
+        </div>
+        <div class="landing-page__h2">
+          <h2>Search for your favorite <span class="purple">MOVIES</span></h2>
+        </div>
+        <div class="landing-page__search-bar">
+          <input id="search" type="search" placeholder="Search by Title" onchange="searchMovies(event)"/>
+        </div>
+        <div class="movie-list">
+          <div class="movie">
+            <div class="movie-card">
+              <div class="movie-card__container">
+                <h3>Movie Title</h3>
+                <p><b>Year:</b></p>
+                <p><b>Type:</b></p>
+                <p><b>imdbID:</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
