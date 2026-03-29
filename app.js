@@ -14,7 +14,7 @@ async function searchMovies(event) {
       <div class="movie-card">
         <div class="movie-card__container">
           <h3>${movie.Title}</h3>
-          <p><b>Year:</b></p> <img src="${movie.Poster}">
+          <p><b>Poster:</b></p> <img src="${movie.Poster}">
           <p><b>Year:</b> ${movie.Year}</p>
           <p><b>Type:</b> ${movie.Type}</p>
           <p><b>imdbID:</b> ${movie.imdbID}</p>
