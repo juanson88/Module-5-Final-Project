@@ -11,55 +11,88 @@
     ></script>
   </head>
   <body>
-    <section class="navigation">
-      <nav>
-        <figure>
-          <img
-            src="https://previews.123rf.com/images/imogi/imogi1805/imogi180500166/102169832-vintage-film-reel-concept.jpg"
-            class="nav__logo"
-            alt=""
-          />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a href="" class="nav__link--anchor">Home</a>
-          </li>
-          <li class="nav__link">
-            <a href="" class="nav__link--anchor"
-              ><span class="black">About</span></a
-            >
-          </li>
-          <li class="nav__link">
-            <a class="btn__contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <section class="landing-page">
-      <div class="container__landing-page">
-        <div class="landing-page__h1">
-          <h1>Movie Database</h1>
-        </div>
-        <div class="landing-page__h2">
-          <h2>Search for your favorite <span class="purple">MOVIES</span></h2>
-        </div>
-        <div class="landing-page__search-bar">
-          <input id="search" type="search" placeholder="Search by Title" onchange="searchMovies(event)"/>
-        </div>
-        <div class="movie-list">
-          <div class="movie">
-            <div class="movie-card">
-              <div class="movie-card__container">
-                <h3>Movie Title</h3>
-                <p><b>Year:</b></p>
-                <p><b>Type:</b></p>
-                <p><b>imdbID:</b></p>
+    <div class="container">
+      <section class="navigation">
+        <nav>
+          <figure>
+            <img
+              src="https://previews.123rf.com/images/imogi/imogi1805/imogi180500166/102169832-vintage-film-reel-concept.jpg"
+              class="nav__logo"
+              alt=""
+            />
+          </figure>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+              <a href="" class="nav__link--anchor">Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="" class="nav__link--anchor"
+                ><span class="black">About</span></a
+              >
+            </li>
+            <li class="nav__link">
+              <a class="btn__contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="landing-page">
+        <div class="container__landing-page">
+          <div class="landing-page__h1">
+            <h1>Movie Database</h1>
+          </div>
+          <div class="landing-page__h2">
+            <h2>Search for your favorite <span class="purple">MOVIES</span></h2>
+          </div>
+          <div class="landing-page__search-bar">
+            <input
+              id="search"
+              type="search"
+              placeholder="Search by Title"
+              onchange="searchMovies(event)"
+            />
+          </div>
+          <div class="movie-list">
+            <div class="movie">
+              <div class="movie-card">
+                <div class="movie-card__container">
+                  <h3>Movie Title: ???</h3>
+                  <p><b>Poster: ???</b></p>
+                  <p><b>Year: ???</b></p>
+                  <p><b>Type: ???</b></p>
+                  <p><b>imdbID: ???</b></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="footer">
+        <figure class="footer__img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOmajgFOer8AVEUWPnsXkvAmpj06y-ffb_g&s" alt="">
+        </figure>
+        <ul class="footer__links">
+          <a href="" class="footer__link">Home</a>
+          <a href="" class="footer__link">About</a>
+          <a href="" class="footer__link">Credits</a>
+          <a href="" class="footer__link">Help</a>
+          <a href="" class="footer__link">Social</a>
+          <a href="" class="footer__link">Join</a>
+          <a href="" class="footer__link">Blog</a>
+          <a href="" class="footer__link">FAQ</a>
+        </ul>
+        <div class="contact">
+          <h3 class="contact_us"><span class="purple"><b>Contact Us</b></span></h3>
+          <div class="contact__form">
+            <input type="email" placeholder="Your Email" />
+            <textarea class="contact__message" id="" rows="4" cols="54">
+Your Message Here</textarea
+            >
+            <input type="submit" />
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
   <script src="app.js"></script>
 </html>

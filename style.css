@@ -30,6 +30,13 @@ input {
   padding-left: 16px;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
 /* Navigation */
 
 nav {
@@ -37,7 +44,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   height: 200px;
   padding: 0 50px;
@@ -97,5 +103,45 @@ nav {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 10px;
+  border-radius: 10px;
+}
+
+.movie-card__container {
+  padding: 24px 0;
+}
+
+/* FOOTER */
+
+.footer__img {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.footer__links {
+display: flex;
+justify-content: space-around;
+margin: 50px 0px 50px 0px;
+text-decoration: none;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.contact_us {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__message {
+  margin: 10px;
+  border: 2px solid black;
   border-radius: 10px;
 }
