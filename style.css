@@ -44,9 +44,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
   height: 200px;
-  padding: 0 50px;
 }
 
 .nav__logo {
@@ -97,6 +95,12 @@ nav {
   display: flex;
   justify-content: center;
   margin: 40px 0;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 auto;
 }
 
 .movie-card {

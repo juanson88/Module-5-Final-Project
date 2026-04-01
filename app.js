@@ -23,3 +23,9 @@ async function searchMovies(event) {
     `,
     ).join("") || "<p>No results found.</p>";
 }
+
+function filterMovies(event) {
+  if (event.target.value === 'OLD_TO_NEW') {
+console.log('old to new')
+  }
+}

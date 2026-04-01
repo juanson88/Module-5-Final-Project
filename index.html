@@ -52,15 +52,22 @@
               onchange="searchMovies(event)"
             />
           </div>
+          <select name="" id="filter" onchange="filterMovies(event)">
+            <option value="" disabled selected>Sort</option>
+            <option value="OLD_TO_NEW">Year, Old to New</option>
+            <option value="NEW_TO_OLD">Year, New to Old</option>
+            <option value="A_TO_Z">Alphabetically, A - Z</option>
+            <option value="Z_TO_A">Alphabetically, Z - A</option>
+          </select>
           <div class="movie-list">
             <div class="movie">
               <div class="movie-card">
                 <div class="movie-card__container">
-                  <h3>Movie Title: ???</h3>
-                  <p><b>Poster: ???</b></p>
-                  <p><b>Year: ???</b></p>
-                  <p><b>Type: ???</b></p>
-                  <p><b>imdbID: ???</b></p>
+                  <h3>Movie Title:</h3>
+                  <p><b>Poster:</b></p>
+                  <p><b>Year:</b></p>
+                  <p><b>Type:</b></p>
+                  <p><b>imdbID:</b></p>
                 </div>
               </div>
             </div>
