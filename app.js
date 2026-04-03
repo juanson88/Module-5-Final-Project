@@ -1,3 +1,11 @@
+function openMenu() {
+  document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+  document.body.classList.remove("menu--open")
+}
+
 async function main() {
   const response = await fetch(
     "https://www.omdbapi.com/?apikey=88b32aac&s=friends",

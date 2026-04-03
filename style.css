@@ -73,7 +73,15 @@ nav {
   color: white;
 }
 
-/* LANDING PAGE */ 
+.btnmenu {
+  display: none;
+}
+
+.menubackdrop {
+  display: none;
+}
+
+/* LANDING PAGE */
 
 .container__landing-page {
   text-align: center;
@@ -123,10 +131,10 @@ nav {
 }
 
 .footer__links {
-display: flex;
-justify-content: space-around;
-margin: 50px 0px 50px 0px;
-text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 50px 0px;
+  text-decoration: none;
 }
 
 .footer__link {
@@ -153,4 +161,73 @@ text-decoration: none;
 .copyright {
   text-align: center;
   margin: 20px;
+}
+
+/* burger menu */
+
+@media (max-width: 650px) {
+  .row {
+    width: 80%;
+  }
+
+  .nav__link--list {
+    display: none;
+  }
+
+  .btnmenu {
+    display: block;
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    color: purple;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    padding: 8px;
+  }
+
+  .menubackdrop {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    border: 1px solid black;
+    margin: 4px;
+    border-radius: 10px;
+  }
+
+  .menu--open .menubackdrop {
+    display: flex;
+  }
+
+  .menulinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menulist {
+    padding: 16px 0px;
+  }
+
+  .menulink {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+  }
+
+  .btnmenuclose {
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    padding: 8px;
+  }
 }
